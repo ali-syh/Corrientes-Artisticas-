@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Libro de Visitas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-contacto {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 35px;
+            margin-top: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0 25px 0;
+            border: 1px solid var(--border-color);
+            background-color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            box-sizing: border-box;
+        }
+        #mensaje-exito {
+            display: none;
+            background-color: #ece4d8;
+            color: #4a3b32;
+            padding: 15px;
+            border: 1px solid var(--accent-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-banner">
+            <h1>Libro de Visitas</h1>
+            <p class="tagline">Registra tus opiniones sobre esta página</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="mensaje-exito">¡Gracias por tu comentario! Tu opinión se ha registrado con éxito.</div>
+
+        <form id="form-art-registro" class="form-contacto" method="POST" action="https://script.google.com/macros/s/AKfycbzKm4zin0hor-E-RjeeInLz-_UNQPTlDzZU8y7PJ9fUs6RmH4D0IBCelwDGLYNYj4xcXA/exec">
+            <label for="nombre" style="font-weight: 600; color: #4a3b32;">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" class="form-control" required>
+
+            <label for="correo" style="font-weight: 600; color: #4a3b32;">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" class="form-control" required>
+
+            <label for="comentario" style="font-weight: 600; color: #4a3b32;">Comentarios de Arte:</label>
+            <textarea id="comentario" name="comentario" rows="5" class="form-control" required></textarea>
+
+            <button type="submit" style="background-color: #4a3b32; color: white; padding: 12px 20px; border: none; width: 100%; cursor: pointer; font-weight: 600; font-size: 16px;">
+                Enviar
+            </button>
+        </form>
+    </main>
+
+    <footer>
+        <p>- Proyecto Escolar</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000; font-family: 'Montserrat', sans-serif;">
+        <button id="btn-menu-flotante" onclick="toggleMenuFlotante()" style="background-color: #dec497; color: #2a313d; border: 2px solid #ffffff; padding: 10px 18px; font-size: 0.9rem; font-weight: 600; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">Menú ☰</button>
+        <div id="caja-menu-flotante" style="display: none; background-color: #ffffff; border: 1px solid #dec497; width: 220px; margin-top: 10px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); padding: 10px; position: absolute; right: 0;">
+            <span style="display: block; font-size: 0.75rem; color: #a393b3; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border-bottom: 1px solid #f4efe6; margin-bottom: 5px;">Corrientes Artísticas</span>
+            <a href="index.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">Inicio</a>
+            <a href="barroco.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Barroco</a>
+            <a href="rococo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Rococó</a>
+            <a href="romanticismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Romanticismo</a>
+            <a href="realismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Realismo</a>
+            <a href="impresionismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Impresionismo</a>
+            <a href="surrealismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Surrealismo</a>
+            <a href="contacto.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s; font-weight: 600; background-color: #f4efe6;">Libro de Visitas</a>
+        </div>
+    </div>
+    <script>function toggleMenuFlotante(){var m=document.getElementById("caja-menu-flotante"),b=document.getElementById("btn-menu-flotante");if(m.style.display==="none"||m.style.display===""){m.style.display="block";b.style.backgroundColor="#e8b4b4";}else{m.style.display="none";b.style.backgroundColor="#dec497";}}</script>
+</body>
+</html>

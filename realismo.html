@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo de Arte - El Realismo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --realismo-bg: #f5f0e6;    
+            --realismo-dark: #3e3835;   
+            --realismo-earth: #a78b70a9;   
+            --realismo-olive: #6e7a68;   
+            --realismo-card: #fdfcf7;    
+        }
+
+        body {
+            background-color: var(--realismo-bg);
+            color: var(--realismo-dark);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .realismo-header {
+            background-color: var(--realismo-earth);
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid var(--realismo-olive);
+        }
+
+        .realismo-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .realismo-nav {
+            background-color: var(--realismo-dark);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .realismo-nav a {
+            color: #f4efe6;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .realismo-nav a:hover, .realismo-nav a.active {
+            color: var(--realismo-bg);
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-box {
+            background-color: var(--realismo-card);
+            border: 1px solid var(--realismo-earth);
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--realismo-olive);
+            margin-top: 0;
+            border-bottom: 1px solid var(--realismo-earth);
+            padding-bottom: 8px;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            background-color: var(--realismo-bg);
+            padding: 10px;
+            border: 1px solid var(--realismo-earth);
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            filter: sepia(0.15) contrast(0.95);
+        }
+
+        .gallery-item h4 {
+            margin: 10px 0 5px 0;
+            color: var(--realismo-dark);
+        }
+
+        .gallery-item p {
+            font-size: 0.85rem;
+            font-style: italic;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="realismo-header">
+        <h1>El Realismo</h1>
+        <p style="color: var(--realismo-bg); font-style: italic; margin-top: 5px;">c. 1840 – 1880</p>
+    </header>
+
+    <main class="container">
+
+        <article class="section-box">
+            <h2>Contexto Ideológico e Histórico</h2>
+            <p>El Realismo nace in Francia como una contestación directa a la artificialidad del Neoclasicismo y a la evasión sentimental del Romanticismo, consolidándose tras los estallidos revolucionarios de 1848. Vinculado estrechamente al desarrollo del positivismo científico, al nacimiento de la sociología moderna, al auge del marxismo y a la organización de la clase obrera industrial, el movimiento proclamó que el único propósito legítimo del arte era registrar el mundo contemporáneo visible, empírico y tangible, rechazando cualquier alusión a pasados heroicos o mundos de fantasía.</p>
+        </article>
+
+        <article class="section-box">
+            <h2>Características Conceptuales y Formales</h2>
+            <p>El Realismo instaura una democratización de los temas artísticos. Los trabajadores industriales, los mineros, las lavanderas y los campesinos de las provincias son elevados al estatus de protagonistas en formatos pictóricos monumentales, una escala litúrgica que las instituciones académicas reservaban de forma exclusiva para la pintura de historia, la mitología o los retratos de la realeza. El lenguaje visual rechaza las alegorías, las metáforas moralizantes y el embellecimiento óptico; los artistas se limitan a plasmar lo que observan directamente de la realidad cotidiana. Formalmente, se impone una paleta de tonos tierra, donde abundan los marrones oscuros, los negros de hollín, los grises plomizos y los verdes densos. La pintura adquiere una textura áspera, pesada y matérica que refleja la dureza del trabajo físico y la gravedad de las problemáticas socioeconómicas derivadas de la industrialización.</p>
+        </article>
+
+        <article class="section-box">
+            <h2>Herramientas, Utensilios y Química del Taller</h2>
+            <p>El deseo de veracidad del Realismo impulsó a los pintores a salir del confinamiento del estudio, un proceso facilitado por innovaciones industriales trascendentales. La más importante fue la invención del tubo de pintura de estaño plegable con tapón de rosca, patentado por John Goffe Rand en 1841. Antes de este invento, los óleos se transportaban en vejigas de cerdo anudadas con hilos, un soporte sumamente frágil que se perforaba con facilidad y provocaba que la pintura se seca rápido. El tubo de estaño permitió a los realistas transportar sus colores listos para usar al aire libre durante periodos prolongados. Gustave Courbet revolucionó la práctica técnica al adoptar espátulas anchas de albañilería para aplicar el óleo sobre el lienzo en bloques planos y compactos; este método eliminaba cualquier rastro del dibujo lineal académico, confiriendo a los estratos de piedra, la tierra y los ropajes rústicos de sus personajes una presencia física casi tridimensional. Asimismo, la aparición de la fotografía a través del daguerrotipo y el colodión húmedo modificó las metodologías de trabajo; los pintores realistas adoptaron las imágenes fotográficas como plantillas de referencia objetiva para analizar anatomías en posturas espontáneas, caídas de ropa accidentales y encuadres no escenificados, rompiendo definitivamente con los posados rígidos y artificiales tradicionales de las modelos de academia.</p>
+        </article>
+
+        <article class="section-box">
+            <h2>Autores Clave y Obras</h2>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://i.pinimg.com/1200x/d3/f5/fa/d3f5fa3237f3bb1348127a5a1bf715b0.jpg" alt="Un entierro en Ornans">
+                    <h4>Gustave Courbet</h4>
+                    <p>Un entierro en Ornans (1849-1850)</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.pinimg.com/1200x/50/08/17/50081706c88b504bdd42445e11313752.jpg" alt="Las espigadoras">
+                    <h4>Jean-François Millet</h4>
+                    <p>Las espigadoras (1857)</p>
+                </div>
+                <div class="gallery-item"; text-align: center>
+                    <img src="https://i.pinimg.com/1200x/69/33/8d/69338d437d771db683916225151a9216.jpg" alt="El vagón de tercera clase">
+                    <h4>Honoré Daumier</h4>
+                    <p>El vagón de tercera clase (1862-1864)</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer style="text-align: center; padding: 20px; background-color: var(--realismo-dark); color: #f4efe6; font-size: 0.9rem;">
+        <p>- Proyecto Escolar-</p>
+    </footer>
+    
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000; font-family: 'Montserrat', sans-serif;">
+        <button id="btn-menu-flotante" onclick="toggleMenuFlotante()" style="background-color: #dec497; color: #2a313d; border: 2px solid #ffffff; padding: 10px 18px; font-size: 0.9rem; font-weight: 600; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">Menú ☰</button>
+        <div id="caja-menu-flotante" style="display: none; background-color: #ffffff; border: 1px solid #dec497; width: 220px; margin-top: 10px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); padding: 10px; position: absolute; right: 0;">
+            <span style="display: block; font-size: 0.75rem; color: #a393b3; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border-bottom: 1px solid #f4efe6; margin-bottom: 5px;">Corrientes Artísticas</span>
+            <a href="index.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">Inicio</a>
+            <a href="barroco.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Barroco</a>
+            <a href="rococo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Rococó</a>
+            <a href="romanticismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Romanticismo</a>
+            <a href="realismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s; font-weight: 600; background-color: #f4efe6;">El Realismo</a>
+            <a href="impresionismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Impresionismo</a>
+            <a href="surrealismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Surrealismo</a>
+            <a href="contacto.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">Libro de Visitas</a>
+        </div>
+    </div>
+    <script>function toggleMenuFlotante(){var m=document.getElementById("caja-menu-flotante"),b=document.getElementById("btn-menu-flotante");if(m.style.display==="none"||m.style.display===""){m.style.display="block";b.style.backgroundColor="#e8b4b4";}else{m.style.display="none";b.style.backgroundColor="#dec497";}}</script>
+</body>
+</html>

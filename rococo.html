@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo de Arte - El Rococó</title>
+    <style>
+       
+        :root {
+            --rococo-bg: #eef7f9;       
+            --rococo-dark: #3a474a;      
+            --rococo-pink: hwb(347 73% 4%);      
+            --rococo-gold: #abe4ff;      
+            --rococo-card: #ffffff;     
+        }
+
+        body {
+            background-color: var(--rococo-bg);
+            color: var(--rococo-dark);
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .rococo-header {
+            background-color: var(--rococo-pink);
+            color: #69103a;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid var(--rococo-gold);
+        }
+
+        .rococo-header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .rococo-nav {
+            background-color: var(--rococo-dark);
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .rococo-nav a {
+            color: #f198ba;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .rococo-nav a:hover, .rococo-nav a.active {
+            color: var(--rococo-pink);
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-box {
+            background-color: var(--rococo-card);
+            border-radius: 8px;
+            border: 1px solid var(--rococo-gold);
+            padding: 30px;
+            margin-bottom: 35px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #b07d7d;
+            margin-top: 0;
+            border-bottom: 2px dashed var(--rococo-gold);
+            padding-bottom: 8px;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery-item {
+            background-color: var(--rococo-bg);
+            padding: 10px;
+            border: 1px solid var(--rococo-pink);
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+
+        .gallery-item h4 {
+            margin: 10px 0 5px 0;
+            color: var(--rococo-dark);
+        }
+
+        .gallery-item p {
+            font-size: 0.85rem;
+            font-style: italic;
+            margin: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="rococo-header">
+        <h1>El Rococó</h1>
+        <p style="color: #82213e; font-style: italic; margin-top: 5px;">c. 1730 – 1780</p>
+    </header>
+
+    <main class="container">
+
+        <article class="section-box">
+            <h2>Contexto Ideológico e Histórico</h2>
+            <p>El Rococó se origina en Francia tras la muerte de Luis XIV, coincidiendo con el traslado de la vida cortesana desde el monumental y rígido palacio de Versalles hacia los salones privados y hoteles particulares de la aristocracia en París. Este movimiento representa el triunfo de una cultura laica, hedonista y marcadamente femenina. El arte deja de ser una herramienta de adoctrinamiento religioso o de glorificación heroica para convertirse en un elemento de decoración interior, intimidad, confort y evasión frente a las crecientes tensiones políticas que preludiaban el fin del Antiguo Régimen.</p>
+        </article>
+
+        <article class="section-box">
+            <h2>Características Conceptuales y Formales</h2>
+            <p>La estética del Rococó se fundamenta en la rocaille, una ornamentación inspirada en las formas asimétricas de las conchas marinas, las olas calcáreas, las hojas de acanto y las líneas serpentinas en forma de letras C y S. Las composiciones son fluidas, ligeras y rechazan cualquier gravedad estructural. La paleta pictórica da un giro radical, sustituyendo los fondos negros y densos del Barroco por colores pastel luminosos: rosas pálidos, celestes marianos, verdes menta, grises perla y aplicaciones abundantes de pan de oro. La luz ya no produce contrastes violentos, sino que se distribuye de manera homogénea, suave y difusa, eliminando las sombras negras en favor de transiciones frías y transparentes. Las temáticas giran en torno a las fiestas galantes, los idilios pastorales, el erotismo velado, los juegos cortesanos, la mitología amorosa y una celebración constante de la frivolidad y el ingenio social.</p>
+        </article>
+
+        <article class="section-box">
+            <h2>Herramientas, Utensilios y Química del Taller</h2>
+            <p>La necesidad de integrar la pintura en espacios decorados con espejos y estucos dorados transformó las demandas técnicas de la época. Para ocultar la pincelada gestual y tosca del periodo anterior, se adoptaron pinceles de pelo de marta y de turón. Estos pelos, extremadamente suaves, finos y elásticos, permitían realizar difuminados perfectos y reproducir fielmente las texturas sedosas de los vestidos de encaje, los satines y la tersura de la piel noble. Paralelamente, la técnica del pastel alcanzó su edad de oro; las barras de pigmento seco compactado con goma arábiga o resinas mínimas se aplicaban directamente sobre papeles de grano medio o pergaminos. Artistas como Rosalba Carriera demostraron que el pastel agilizaba la ejecución del retrato al eliminar los tiempos de secado del óleo, capturando de forma inigualable la cualidad empolvada de los rostros aristocráticos. Los lienzos pasaron a ser de grano muy fino, pulidos meticulosamente con piedra pómez antes de recibir imprimaciones muy claras a base de blanco de zinc o yeso fino, garantizando que los colores pastel mantuvieran su luminosidad original desde las capas inferiores. En el campo de la química, el descubrimiento accidental del azul de Prusia a comienzos del siglo dieciocho dotó a los artistas de un pigmento sintético de enorme poder tintóreo, ideal para configurar las atmósferas nocturnas suaves y los cielos claros propios de estas escenas cortesanas.</p>
+        </article>
+
+        <article class="section-box">
+            <h2>Autores Clave y Obras</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://i.pinimg.com/1200x/56/b8/da/56b8da3ea27204f48a209a0ad08d58f2.jpg" alt="El columpio">
+                    <h4>Jean-Honoré Fragonard</h4>
+                    <p>El columpio (1767)</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://i.pinimg.com/1200x/b6/08/bf/b608bf39a740c0f04c07e68341b2ef9f.jpg" alt="Peregrinación a la isla de Citera">
+                    <h4>Antoine Watteau</h4>
+                    <p>Peregrinación a la isla de Citera (1717)</p>
+                </div>
+                <div class="gallery-item"; text-align: center>
+                    <img src="https://i.pinimg.com/736x/5f/69/06/5f6906618c75fa6d4779eab079615f8a.jpg" alt="El triunfo de Venus">
+                    <h4>François Boucher</h4>
+                    <p>El triunfo de Venus (1740)</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer style="text-align: center; padding: 20px; background-color: var(--rococo-dark); color: #f4efe6; font-size: 0.9rem;">
+        <p>- Proyecto Escolar-</p>
+    </footer>
+    
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000; font-family: 'Montserrat', sans-serif;">
+        <button id="btn-menu-flotante" onclick="toggleMenuFlotante()" style="background-color: #f490b1; color: #2a313d; border: 2px solid #ffffff; padding: 10px 18px; font-size: 0.9rem; font-weight: 600; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">Menú ☰</button>
+        <div id="caja-menu-flotante" style="display: none; background-color: #ffffff; border: 1px solid #f0a2c5; width: 220px; margin-top: 10px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); padding: 10px; position: absolute; right: 0;">
+            <span style="display: block; font-size: 0.75rem; color: #a393b3; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border-bottom: 1px solid #f4efe6; margin-bottom: 5px;">Corrientes Artísticas</span>
+            <a href="index.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">Inicio</a>
+            <a href="barroco.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Barroco</a>
+            <a href="rococo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s; font-weight: 600; background-color: #f4efe6;">El Rococó</a>
+            <a href="romanticismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Romanticismo</a>
+            <a href="realismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Realismo</a>
+            <a href="impresionismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Impresionismo</a>
+            <a href="surrealismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Surrealismo</a>
+            <a href="contacto.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">Libro de Visitas</a>
+        </div>
+    </div>
+    <script>function toggleMenuFlotante(){var m=document.getElementById("caja-menu-flotante"),b=document.getElementById("btn-menu-flotante");if(m.style.display==="none"||m.style.display===""){m.style.display="block";b.style.backgroundColor="#e8b4b4";}else{m.style.display="none";b.style.backgroundColor="#dec497";}}</script>
+</body>
+</html>

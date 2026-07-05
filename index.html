@@ -1,0 +1,392 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html>
+    <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>Corrientes Artíticas</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div>
+            <nav class="main-nav">
+            <ul>
+                <li><a href= "#barroco">Barroco</a></li>
+                <li><a href="#rococo">Rococó</a></li>
+                <li><a href="#romanticismo">Romanticismo</a></li>
+                <li><a href="#realismo">Realismo</a></li>
+                <li><a href="#impresionismo">Impresionismo</a></li>
+                <li><a href="#surrealismo">Surrealismo</a></li>
+                <li><a href="#tabla-resumen">Tabla</a></li>
+            </ul>
+
+        </div>
+        <div class="header-banner">
+            <h1>Las Corrientes Artísticas</h1>
+            <p class="tagline">Cronología del Barroco hasta la psique Surrealista</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="text-center" style="margin: 20px 0 40px 0; text-align: center;">
+            <button type="button" id="btn-manifiesto" style="background-color: #4a3b32; color: #f4efe6; padding: 12px 24px; font-weight: 600; border: none; cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 1rem; border-radius: 4px;">
+                Manifiesto del Sitio
+            </button>
+        </div>
+        
+        <section class="intro-section">
+            <p class="intro-text">
+                "El arte no copia lo visible, más bien lo hace visible".
+            </p>
+            <h4 class="section-subtitle"> Aquí encontrarás las seis corrientes artísticas principales que transformaron la sensibilidad de la humanidad.</h4>
+        </section>
+        <section class="art-movements">
+
+            <article id="barroco" class="movement-card">
+                <span class="era">Siglo XVII - Principios del Siglo XVIII</span>
+                <h2 class="movement-title">1. El Barroco</h2>
+                   <div class="carrusel-contenedor">
+                    <img id="img-barroco" class="movement-img" src="https://i.pinimg.com/1200x/b5/dc/5c/b5dc5c5a1d3096b690f7cc1186bfa815.jpg" alt="Barroco">
+                    <div class="carrusel-botones">
+                        <button type="button" onclick="cambiarBarroco(-1)">Anterior</button>
+                        <button type="button" onclick="cambiarBarroco(1)">Siguiente</button>
+                    </div>
+                   </div>
+                   
+                   <h5>Christ in the Storm on the Sea of Galilee. Creada en 1633 por el pintor barroco holandés Rembrandt van Rijn.</h5>
+                   <h5></h5>
+                   <h5></h5>
+
+                   <h3 class="section-subtitle">Contexto e Identidad</h3>
+                   <p class="descrption">
+                       El Barroco nació en una Europa convulsa, fragmentada por las guerras de religión y la Contrarreforma Católica. Para frenar el avance del protestantismo, la Iglesia utilizó el arte como un mecanismo de propaganda colosal diseñado para impactar, conmover y someter emocionalmente a las masas más allá del intelecto.
+                   </p>
+
+                   <h3 class="section-subtitle">Técnicas Revolucionarias</h3>
+                   <div class="tech-container">
+                        <span class="tech-tag">Claroscuro Extremo</span>
+                        <span class="tech-tag">Tenebrismo</span>
+                        <span class="tech-tag">Perspectiva Ilusionista</span>
+                   </div>
+                   <div class="details-grid">
+                        <div class="grid-col">
+                            <h4 class="grid-title">Obras Maestras</h4>
+                            <ul class="styled-list">
+                                <li><em>La vocación de San Mateo</em> (Caravaggio)</li>
+                                <li><em>Las Meninas</em> (Velázquez)</li>
+                            </ul>
+                        </div>
+                   </div>
+            </article>
+
+            <article id="rococo" class="movement-card">
+                <span class="era">C. 1730 - 1770</span>
+                <h2 class="movement-title">2. El Rococó</h2>
+                <div class="carrusel-contenedor">
+                    <img id="img-rococo" class="movement-img" src="https://i.pinimg.com/1200x/e4/a2/cd/e4a2cd33583eeb79e4dc6f95536b89b9.jpg" alt="Rococó">
+                    <div class="carrusel-botones">
+                        <button type="button" onclick="cambiarRococo(-1)">Anterior</button>
+                        <button type="button" onclick="cambiarRococo(1)">Siguiente</button>
+                    </div>
+                </div>
+
+                <h5>The Triumph of Venus. Creada en 1740 por el artista francés François Boucher.</h5>
+                <h5></h5>
+                <h5></h5>
+
+                <h3 class="section-subtitle">Contexto e Identidad</h3>
+                <p class="descrption">
+                    Tras la muerte del rey Luis XIV en Francia, la aristocracia se tarsladó a la ciudad de París. El Rococó surge como una ramificación sofiisticada, hecha por y para la aristocracia hedonista. Es íntimo, luminoso, frívolo y descaradamente decorativo. 
+                </p>
+
+                <h3 class="section-subtitle">Técnicas Revolucionarias</h3>
+                <div class="tech-container">
+                    <span class="tech-tag">Paleta de Colores Pastel</span>
+                    <span class="tech-tag">Pinceleadas Vaporosas</span>
+                    <span class="tech-tag">Formas Orgánicas</span>
+                </div>
+
+                <div class="details-grid">
+                    <div class="grid-col">
+                        <h4 class="grid-title">Artistas Principales</h4>
+                        <ul class="styled-list">
+                            <li><strong>Jean-Honoré Fragonard:</strong> Capturó el espíritu de la picardía y el romance clandestino.</li>
+                            <li><strong>Antonie Watteau:</strong> Creador del género de las fiestas elegantes en entornos bucólicos</li>
+                        </ul>
+                    </div>
+                    <div class="grid-col">
+                        <h4 class="grid-title">Obras Maestras</h4>
+                        <ul class="styled-list">
+                            <li><em>El columpio</em> (Fregonard)</li>
+                            <li><em>Peregrinación a la isla de Citera</em> (Watteau)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="romanticismo" class="movement-card">
+                <span class="era">C. 1790 - 1850</span>
+                <h2 class="movement-title">3. El Romanticismo</h2>
+                <div class="carrusel-contenedor">
+                    <img id="img-romanticismo" class="movement-img" src="https://i.pinimg.com/1200x/4c/e5/85/4ce5859011b8328ec4c0485fbc1da9de.jpg" alt="Romanticismo">
+                    <div class="carrusel-botones">
+                        <button type="button" onclick="cambiarRomanticismo(-1)">Anterior</button>
+                        <button type="button" onclick="cambiarRomanticismo(1)">Siguiente</button>
+                    </div>
+                </div>                
+                
+                <h5>The Shipwreck. Creada en 1805 por el británico Damien Hirst.</h5>
+                <h5></h5>
+                <h5></h5>
+
+                <h3 class="section-subtitle">Técnicas Revolucionarias</h3>
+                <div class="tech-container">
+                    <span class="tech-tag">Predominio del Color</span>
+                    <span class="tech-tag">Composiciones Dinámicas</span>
+                    <span class="tech-tag">Efectos Atmosféricos</span>
+                </div>
+
+                <div class="details-grid">
+                    <div class="grid-col">
+                        <h4 class="grid-title">Artistas Principales</h4>
+                        <ul class="styled-list">
+                            <li><strong>Caspar David Friedrich:</strong> El místico de los paisajes introspectivos alemanes</li>
+                            <li><strong>Eugène Delacroix:</strong> Líder famoso por el uso salvaje del color y la pasión política.</li>
+                        </ul>
+                    </div>
+                    <div class="grid-col">
+                        <h4 class="grid-title">Obras Maestras</h4>
+                        <ul class="styled-list">
+                            <li><em>El caminate sobre el mar de nubes</em> (Friedrich)</li>
+                            <li><em>La libertad guiando al pueblo</em> (Delacroix)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="realismo" class="movement-card">
+                <span class="era">C. 1840 - 1880</span>
+                <h2 class="movement-title">4. El Realismo</h2>
+<div class="carrusel-contenedor">
+                    <img id="img-realismo" class="movement-img" src="https://i.pinimg.com/736x/3b/3d/fd/3b3dfdb5520debcf581c6bf99dd21896.jpg" alt="Realismo">
+                    <div class="carrusel-botones">
+                        <button type="button" onclick="cambiarRealismo(-1)">Anterior</button>
+                        <button type="button" onclick="cambiarRealismo(1)">Siguiente</button>
+                    </div>
+                </div>                
+                
+                <h5>The Iron Rolling Mill (Eisenwalzwerk). Creada por el artista realista alemán Adolph von Menzel en 1872 - 1875</h5>
+                <h5></h5>
+                <h5></h5>
+
+                <h3 class="section-subtitle">Contexto e Identidad</h3>
+                <p class="descrption">
+                    El Realismo surgió en Francia como un choque directo contra los excesos idealistas del Romanticismo. El movimiento exigió que le arte se enfocara única y exclusivamente en el mundo contemporáneo observable, retratando de forma cruda a las clases trabajadoras.
+                </p>
+
+                <h3 class="section-subtitle">Técnicas Revolucionarias</h3>
+                <div class="tech-container">
+                    <span class="tech-tag">Paleta de Colores Tierra</span>
+                    <span class="tech-tag">Formartos Monutales para Temas Cotidianados</span>
+                    <span class="tech-tag">Reachazo a la idealización</span>
+                </div>
+
+                <div class="details-grid">
+                    <div class="grid-col">
+                        <h4 class="grid-title">Artistas Principales</h4>
+                        <ul class="styled-list">
+                            <li><strong>Gustave Courbet:</strong> Líder qque afirmaba: "No puedo pintar un ángel porque nunca he visto uno".</li>
+                            <li><strong>Jean-François Millet:</strong> Dignidicó la figura y la rudeza del campesinado rural.</li>
+                        </ul>
+                    </div>
+                    <div class="grid-col">
+                        <h4 class="grid-title">Obras Meestras</h4>
+                        <ul class="styled-list">
+                            <li><em>El entierro de Ornans</em> (Courbet)</li>
+                            <li><em>Las espigadoras</em> (Millet)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="impresionismo" class="movement-card">
+                <span class="era">C. 1874 - 1886</span>
+                <h2 class="movement-title">5. El Impresionismo</h2>
+<div class="carrusel-contenedor">
+                    <img id="img-impresionismo" class="movement-img" src="https://i.pinimg.com/1200x/5f/81/39/5f813909500ab8392ff7e733989c54cd.jpg" alt="Impresionismo">
+                    <div class="carrusel-botones">
+                        <button type="button" onclick="cambiarImpresionismo(-1)">Anterior</button>
+                        <button type="button" onclick="cambiarImpresionismo(1)">Siguiente</button>
+                    </div>
+                </div>                
+                
+                <h5>Water Lilies and Japanese Bridge, Pintada por el artista francés Claude Monet en el año 1899</h5>
+                <h5></h5>
+                <h5></h5>
+
+                <h3 class="section-subtitle">Contexto e Identidad</h3>
+                <p class="descrption">
+                    El auge de la fotografía liberó al arte de registra con precisión la realidad. Los impresionistas salieron del estudio a pintar al aire libre (en plein air), buscando capturar el instante efímero y cambio constante que gemera la luz dobre los objetos.
+                </p>
+
+                <h3 class="section-subtitle">Técnicas Revolucionarias</h3>
+                <div class="tech-container">
+                     <span class="tech-tag">Pinceleada Yuxtapuesta</span>
+                     <span class="tech-tag">Teoría del Color Óptico</span>
+                     <span class="tech-tag">Sombras Coloreadas sin Negro</span>
+                </div>            
+
+                <div class="details-grid">
+                    <div class="grid-col">
+                        <h4 class="grid-title">Artistas Principales</h4>
+                        <ul class="styled-list">
+                            <li><strong>Claude Monet:</strong> Obsesionado con estudiar la luz solar en diferentes horas del día.</li>
+                            <li><strong>Pierre-Auguste Renoir</strong> Enfocado en dinámicas sociales alegres y reflejos en la piel.</li>
+                        </ul>
+                    </div>
+                    <div class="grid-col">
+                        <h4 class="grid-title">Obras Maestras</h4>
+                        <ul class="styled-list">
+                            <li><em>Impresión, sol naciente</em> (Monet)</li>
+                            <li><em>Baile en el Moulin de la Galette</em> (Renoir)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="surrealismo" class="movement-card">
+                <span class="era">C. 1924 - 1966</span>
+                <h2 class="movement-title">6. El Surrealismo</h2>
+<div class="carrusel-contenedor">
+                    <img id="img-surrealismo" class="movement-img" src="https://i.pinimg.com/736x/82/c8/41/82c8411e0a23d6da330d2805d2ed4874.jpg" alt="Surrealismo">
+                    <div class="carrusel-botones">
+                        <button type="button" onclick="cambiarSurrealismo(-1)">Anterior</button>
+                        <button type="button" onclick="cambiarSurrealismo(1)">Siguiente</button>
+                    </div>
+                </div>                
+                
+                <h5>The Menin Road. Creada por el artista británico Paul Nash en 1919</h5>
+                <h5></h5>
+                <h5></h5>
+            
+                <h3 class="section-subtitle">Contexto e Identidad</h3>
+                <p class="descrption">
+                    Nacido de la devastación moral de la Primera Guerra Mundial e influenciado por la razón consciente para liberar el subconsciente, el mundo caótico de los sueños y el automatismo puro.
+                </p>
+                
+                <h3 class="section-subtitle">Técnicas Revolucionarias</h3>
+                <div class="tech-container">
+                    <span class="tech-tag">Automatismo Psíquico</span>
+                    <span class="tech-tag">Hiperrealismo Onírico</span>
+                    <span class="tech-tag">Objetos Incongruentes</span>
+                </div>
+
+                <div class="details-grid">
+                    <div class="grid-col">
+                        <h4 class="grid-title">Artistas principales</h4>
+                        <ul class="styled-list">
+                            <li><strong>Salvador Dalí</strong> Perfeccionó el método "Paranoico-Crítico" para materializar delirios.</li>
+                            <li><strong>René Magritte</strong>Pintor conceptual belga que jugaba con la ambigüedad de las imágenes.</li>
+                        </ul>
+                    </div>
+                    <div class="grid-col">
+                        <h4 class="grid-title">Obras Maestras</h4>
+                        <ul class="styled-list">
+                            <li><em>La persistencia de la memoria</em> (Dalí)</li>
+                            <li><em>La traición de las imágenes</em>(Magritte)</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        
+        <section id="tabla-resumen" class="table-section">
+            <h3 class="section-subtitle text-center">Resumen</h3>
+            <table class="art-table">
+                <thead>
+                    <tr>
+                        <th>Corrientes Artísticas</th>
+                        <th>Siglo / Época</th>
+                        <th>Enfoque Técnico Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Barroco</td>
+                        <td>XVII</td>
+                        <td>Tenebrismo y claroscuro extremo.</td>
+                    </tr>
+                    <tr>
+                        <td>Rococó</td>
+                        <td>XVIII</td>
+                        <td>Uso de colores pastel y líneas orgánicas</td>
+                    </tr>
+                    <tr>
+                        <td>Romanticismo</td>
+                        <td>XIX (Inicio)</td>
+                        <td>Predominio del color y texturas expresivas.</td>
+                    </tr>
+                    <tr>
+                        <td>Realismo</td>
+                        <td>XIX (Medio)</td>
+                        <td>Formatos monumentales para escenas vulgares.</td>
+                    </tr>
+                    <tr>
+                        <td>Impresionismo</td>
+                        <td>XIX (Final)</td>
+                        <td>Pinceleada corta yuxtapuesta y luz en plein air.</td>
+                    </tr>
+                    <tr>
+                        <td>Surrealismo</td>
+                        <td>XX</td>
+                        <td>Automatismo psíquico e hiperrealismo onírico.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>- Proyecto Escolar-</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000; font-family: 'Montserrat', sans-serif;">
+        
+        <button id="btn-menu-flotante" onclick="toggleMenuFlotante()" style="background-color: #dec497; color: #2a313d; border: 2px solid #ffffff; padding: 10px 18px; font-size: 0.9rem; font-weight: 600; border-radius: 20px; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: all 0.3s ease;">
+            Menú ☰
+        </button>
+        <div id="caja-menu-flotante" style="display: none; background-color: #ffffff; border: 1px solid #dec497; width: 220px; margin-top: 10px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.08); padding: 10px; position: absolute; right: 0;">
+           <span style="display: block; font-size: 0.75rem; color: #a393b3; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border-bottom: 1px solid #f4efe6; margin-bottom: 5px;">Corrientes Artísticas</span>
+           <a href="index.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s; font-weight: 600; background-color: #f4efe6;">Inicio</a>
+           <a href="barroco.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Barroco</a>
+           <a href="rococo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Rococó</a>
+           <a href="romanticismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Romanticismo</a>
+           <a href="realismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Realismo</a>
+           <a href="impresionismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Impresionismo</a>
+           <a href="surrealismo.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">El Surrealismo</a>
+           <a href="contacto.html" style="display: block; color: #2a313d; text-decoration: none; padding: 8px 10px; font-size: 0.85rem; border-radius: 6px; transition: background 0.2s;">Libro de Visitas</a>
+        </div>
+    </div>
+
+<script>
+    function toggleMenuFlotante() {
+        var menu = document.getElementById("caja-menu-flotante");
+        var btn = document.getElementById("btn-menu-flotante");
+        if (menu.style.display === "none" || menu.style.display === "") {
+            menu.style.display = "block";
+            btn.style.backgroundColor = "#e8b4b4"; 
+        } else {
+            menu.style.display = "none";
+            btn.style.backgroundColor = "#dec497"; 
+        }
+    }
+</script>
+</body>
+</html>
